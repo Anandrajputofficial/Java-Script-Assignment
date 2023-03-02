@@ -1,0 +1,199 @@
+Value and Datatypes ====>
+
+(1) Create a Javascript file, using javascript comments, List all the datatypes of javascript,  and specify an example for each of them.
+
+Ans. 
+The following are the datatypes of javascript:
+1. String 
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+1.String: "I am happy to join PW Skills FSWD course"
+2.Number:
+i) Integer: 9
+ii) Floating value: 10.2
+iii) Infinity: Number.POSITIVE_INFINITY,
+Number.NEGATIVE_INFINITY
+iv) Not a Number: NaN
+
+3.BigInt: 1024n
+4.Boolean: true, false
+5.undefined: undefined
+6.Null: null
+7.Symbol: Symbol('PW Skills')
+8.objects:
+i)Array: [1,2, "PW"]
+ii)Object: {name: "PW Skills", course: "FSWD"}
+
+
+here's a JavaScript file that lists all the data types in JavaScript with examples:
+
+// String data type
+let myString = "I am happy to join PW Skills FSWD course";
+
+// Number data type
+let myInteger = 9;
+let myFloat = 10.2;
+let myPositiveInfinity = Number.POSITIVE_INFINITY;
+let myNegativeInfinity = Number.NEGATIVE_INFINITY;
+let myNaN = NaN;
+
+// BigInt data type
+let myBigInt = 1024n;
+
+// Boolean data type
+let myTrueBoolean = true;
+let myFalseBoolean = false;
+
+// Undefined data type
+let myUndefined = undefined;
+
+// Null data type
+let myNull = null;
+
+// Symbol data type
+let mySymbol = Symbol('PW Skills');
+
+// Object data type
+let myArray = [1, 2, "PW"];
+let myObject = {name: "PW Skills", course: "FSWD"};
+
+
+(2) Create an array of 10 products that you have recently purchased or viewed on an e-commerce site.
+
+Ans
+["Ipone",
+"Macbook Pro",
+"Flower Pot",
+"Water Bottle",
+"Mac Studio Mint",
+"Watch",
+"tenis Ball",
+"Mouse Pad",
+"keyboard"
+"Lens"];
+
+Here's an example JavaScript array with your products:
+
+let products = ["iPhone", "Macbook Pro", "Flower Pot", "Water Bottle", "Mac Studio Mint", "Watch", "Tennis Ball", "Mouse Pad", "Keyboard", "Lens"];
+
+// Print the array to the console
+console.log(products);
+
+
+(3) Create an object of a student registry of 5 students whose key is the registration umber and the value is the student name. Registratiin number starts from 1 and Continues.
+
+Ans.
+{
+1: "Mithun",
+2: "Alka",
+3: "Anurag",
+4: "prabir",
+5: "Shivam",
+};
+
+
+Here's an example JavaScript object that represents a student registry of 5 students:
+
+let studentRegistry = {
+    1: "Mithun",
+    2: "Alka",
+    3: "Anurag",
+    4: "Prabir",
+    5: "Shivam"
+};
+
+// Print the object to the console
+console.log(studentRegistry);
+
+Variable and typeof ====>
+
+(1) Specify an example for all the datatypes in javascript, store the values in a variable, and verify the type of value stored.
+
+Ans. 
+
+1. String 
+
+let var1 = "I am happy to join PW Skills FSWD course";
+console.log(typeof var1);
+
+2. Number : -
+i) integer:
+
+let var2 = 9;
+console.log(typeof var2);
+
+ii) floating value:
+
+let var3 = 10.2;
+console.log(typeof var3);
+
+iii) Infinity:
+
+let var4  = Number .Positive Infinity:Y;
+console.log(typeof var4);
+
+iv) Not a Number:
+
+let var6 = NaN;
+console.log(typeof var6);
+
+
+3. Bigint ;
+
+let var7 = 1024n;
+console.log(typeof var7);
+
+4. Boolean;
+
+let var8 = true;
+console.log(typeof var8);
+
+5. Undefined
+let var9;
+console.log(typeof var9);
+
+6. Null
+let var10 = null;
+console.log(typeof var10);
+
+7. Symbol
+let var11 = Symbol("PW Skills");
+console.log(typeof var11);
+
+8. Objects:
+i) Array:
+let var12 = [1, 2, "PW"];
+console.log(typeof var12);
+
+ii) Objects:
+
+let var13 = {name: "PW Skills", course: "FSWD"};
+console.log(typeof var13);
+
+
+In the above code, I have created variables that store different data types, including strings, numbers (both integer and floating point), BigInt, boolean, undefined, null, symbol, arrays, and objects. I have also included console.log statements to verify the type of each variable using the typeof operator. This will print the data type of each variable to the console when you run the code.
+
+
+(2) Create 2 Valid variables and 2 invalid variables and print them onto the console. Comment the results and error messages.
+
+Ans:
+
+Valid variables 
+
+let name = "PW Skills";
+console.log(name) //output:PW Skills
+let iAmHappy = true;
+console.log(iAmHappy); output:true
+
+invalid variables
+
+let 1name ="PW skills"
+console.log(1name); // output: syntaxerror: invalid pr unepeted token 
+let var = 13
+console.log(var); // output : syntaerror: unepected token 'var'
