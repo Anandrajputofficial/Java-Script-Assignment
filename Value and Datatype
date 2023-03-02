@@ -479,3 +479,295 @@ let num74 = 10;
 console.log(num73 <= num74); // false
 
 
+What are Conditions, if , if-else, if-else-if =======>
+
+(1) Write a program of traffic control that accepts the traffic light displayed and prints the message. If the traffic light is red print the vehicles must stop.
+
+Ans:
+
+let trafficligh = "orange";
+
+if (trafficlight == "red") {
+console.log("vehicle must stop.");
+} else if (trafficlight == "orange") {
+console.log("vehicle must wait. The Signal is Changing to red or green.");
+} else if (trafficlight == "green") {
+console.log('vehicle may proceed with caution");
+} else {
+console.log('Invalid traffic Light ");
+}
+
+
+Here is the Correct Code : =======> 
+
+let trafficlight = "orange";
+
+if (trafficlight == "red") {
+  console.log("Vehicles must stop.");
+} else if (trafficlight == "orange") {
+  console.log("Vehicles must wait. The signal is changing to red or green.");
+} else if (trafficlight == "green") {
+  console.log("Vehicles may proceed with caution.");
+} else {
+  console.log("Invalid traffic light.");
+}
+
+
+
+(2) Write a program to print the largest of 2 numbers.
+
+Ans:
+
+let num1 = 20;
+let num2 = 15;
+
+if (num1 > num2) {
+console.log("num1 is greater than num2");
+} else {
+console.log("num2 is greater than num1);
+}
+
+
+This Code is Right
+
+(3) Write a program that takes a number as input and outputs "Fizz" IF IT IS DIVISIBLE BY 3, "Buzz" if it is divisible by 5, and "Fizzbuzz" if it divisible by both 3 and 5. Note that any number can be passed and not restricted to this numbers  divisible by 3or 5. 
+
+
+Ans:
+
+let num = 5;
+
+if (num % 5 == 0 && num % 3 == 0) {
+console.log("FizzBuzz");
+} else if (num % 3 == 0) {
+console.log("Fizz");
+} else if (num % 5 == 0) {
+console.log("Buzz"); 
+}else {
+console.log ("invalid input");
+}
+
+
+
+Switch Case ===========>
+
+(1) Write a program that takes in a day of the week (e.g. , Monday, Tuesday, etc.) and outputs the numbers of days untils the weekend.
+
+Ans:
+
+const day = "Tuesday";
+let daysUntilweekend;
+
+switch (day) {
+    case "Monday":
+        console.log('There are 5 day(s) untill the weekend.');
+        break;
+          case"Tuesday":
+          console.log('There are 4 day(s) untill the weekend.');
+          break;
+          case "Wednesday":
+          console.log('There are 3 day(s) untill the weekend.');
+         break;
+         case "Thrusday":
+           console.log('There are 2 day(s) untill the weekend.');
+           break;
+           case "Friday":
+            console.log('There are 1 day(s) untill the weekend.');
+            break;
+            case "Saturday":
+              case "sunday":
+              console.log('There are 0 day(s) untill the weekend.');
+            break;
+            default:
+              daysUntilweekend = "Invalid day";
+              break;
+
+}
+
+
+
+Here is the Corrected Code =============>
+
+const day = "Tuesday";
+let daysUntilweekend;
+
+switch (day) {
+  case "Monday":
+    daysUntilweekend = 5;
+    break;
+  case "Tuesday":
+    daysUntilweekend = 4;
+    break;
+  case "Wednesday":
+    daysUntilweekend = 3;
+    break;
+  case "Thursday":
+    daysUntilweekend = 2;
+    break;
+  case "Friday":
+    daysUntilweekend = 1;
+    break;
+  case "Saturday":
+  case "Sunday":
+    daysUntilweekend = 0;
+    break;
+  default:
+    daysUntilweekend = "Invalid day";
+    break;
+}
+
+console.log(`There are ${daysUntilweekend} day(s) until the weekend.`);
+
+In this code, we first declare a variable daysUntilweekend to store the number of days until the weekend. Then, we use the switch statement to check the value of the day variable. Based on the value of day, we set the value of daysUntilweekend accordingly. Finally, we use a console.log statement to output the result.
+
+
+(2) Write a program  that takes in a number between 1 and 12 and outputs the corresponding month of the year. 
+
+Ans: 
+
+
+Here is the correct Code 
+
+let monthNumber = 5;
+let monthName;
+
+switch (monthNumber) {
+  case 1:
+    monthName = "January";
+    break;
+  case 2:
+    monthName = "February";
+    break;
+  case 3:
+    monthName = "March";
+    break;
+  case 4:
+    monthName = "April";
+    break;
+  case 5:
+    monthName = "May";
+    break;
+  case 6:
+    monthName = "June";
+    break;
+  case 7:
+    monthName = "July";
+    break;
+  case 8:
+    monthName = "August";
+    break;
+  case 9:
+    monthName = "September";
+    break;
+  case 10:
+    monthName = "October";
+    break;
+  case 11:
+    monthName = "November";
+    break;
+  case 12:
+    monthName = "December";
+    break;
+  default:
+    monthName = "Invalid month number";
+    break;
+}
+
+console.log(`The month number ${monthNumber} corresponds to ${monthName}.`);
+
+
+Ternary Conditions ==============>
+
+(1) Write a program that takes in a number and outputs wheather it is positive, negative or zero. 
+
+Ans: 
+
+let number = 0;
+number == 0
+? console.log("The number is zero")
+: number > 0
+? console.log("The number is greter than zero");
+: console.log("The number is lesser than zero');
+
+
+(2) Create a program that takes in two numbers and prints the larger one.
+
+Ans:
+
+let num1 = 10;
+let num2 = 10;
+
+
+num1 == num2
+
+? console.log("Both the numbers are equal.")
+: num1 > num2 
+? console.log('The larger  numbers among the two numbers is ${num1}.')
+: console.log('The larger  numbers among the two numbers is ${num2}.')
+
+
+
+Loops ==========> 
+
+(1) Write a program that generates the multiplication table in the textbook format for a given number.
+
+let number = 5;
+
+for (let i = 1; i <= 10; i++) {
+console.log('${number}' * ${i} = {number * i}' );
+}
+
+
+// output
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
+
+
+(2) write a program that prints all the positive even numbers till the number specified. 
+
+Ans: 
+
+let number = 10;
+
+for (let i = 1; i <= number; i++) {
+if (i % 2 == 0) {
+console.log(i);
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
